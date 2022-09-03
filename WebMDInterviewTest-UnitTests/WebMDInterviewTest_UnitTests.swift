@@ -1,4 +1,5 @@
 import XCTest
+@testable import WebMDInterviewTest
 
 class WebMDInterviewTest_UnitTests: XCTestCase {
     
@@ -7,12 +8,35 @@ class WebMDInterviewTest_UnitTests: XCTestCase {
      2. Write unit test for validating the filtering and sorting of the feed items.
      3. OPTIONAL: Write at least 1 unit test for a functionality you think that it needs to be covered by tests.
      */
+	
+	func testCanParseData() {
+		
+	}
+	
+	
+	func testCanParseDataViaJSONFile() throws {
+		guard let pathString = Bundle(for: type(of: self)).path(forResource: "data", ofType: "json") else {
+			fatalError("data.json not found")
+		}
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+		guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else {
+			fatalError("Unable to convert data.json to String")
+		}
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+		print("The JSON string is: \(jsonString)")
+
+		guard let jsonData = jsonString.data(using: .utf8) else {
+			fatalError("Unable to convert data.json to Data")
+		}
+
+		guard let jsonDictionary = try? JSONSerialization.jsonObject(with: jsonData, options: []) as? [String:Any] else {
+			fatalError("Unable to convert data.json to JSON dictionary")
+		}
+
+		print("The JSON dictionary is: \(jsonDictionary)")
+		
+		let feedItemData = try! JSONDecoder().decode(FeedItem.self, from: jsonData)
+		
+		XCTAssertEqual("Biotin Can Distort Lab Tests", feedItemData.title)
+	}
 }

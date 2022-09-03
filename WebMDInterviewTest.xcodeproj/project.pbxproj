@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1E164528C25F9B00DFDFC7 /* ItemsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1E164328C25F9B00DFDFC7 /* ItemsTableViewCell.xib */; };
+		5A1E164728C32E7300DFDFC7 /* FeedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E164628C32E7300DFDFC7 /* FeedDetailsViewController.swift */; };
 		6A485480065085FBCCAF283C /* Pods_WebMDInterviewTest_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546A7FFC0A1D0E8E4CC769 /* Pods_WebMDInterviewTest_UnitTests.framework */; };
 		99667451A254FF6546928C07 /* Pods_WebMDInterviewTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4F344908BF476674F4A622 /* Pods_WebMDInterviewTest.framework */; };
 		F212351225BF56F10003048F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F212351125BF56F10003048F /* README.md */; };
 		F218566C25BD6A1300FD50E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218566B25BD6A1300FD50E4 /* AppDelegate.swift */; };
-		F218567025BD6A1300FD50E4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218566F25BD6A1300FD50E4 /* FeedViewController.swift */; };
+		F218567025BD6A1300FD50E4 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218566F25BD6A1300FD50E4 /* FeedTableViewController.swift */; };
 		F218567325BD6A1300FD50E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F218567125BD6A1300FD50E4 /* Main.storyboard */; };
 		F218567525BD6A1400FD50E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F218567425BD6A1400FD50E4 /* Assets.xcassets */; };
 		F218567825BD6A1400FD50E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F218567625BD6A1400FD50E4 /* LaunchScreen.storyboard */; };
@@ -37,13 +39,16 @@
 		36546A7FFC0A1D0E8E4CC769 /* Pods_WebMDInterviewTest_UnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebMDInterviewTest_UnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B409CD3B1F48EEC9E4F075B /* Pods-WebMDInterviewTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMDInterviewTest.release.xcconfig"; path = "Target Support Files/Pods-WebMDInterviewTest/Pods-WebMDInterviewTest.release.xcconfig"; sourceTree = "<group>"; };
 		495C5EEF0D660C5132D64CF5 /* Pods-WebMDInterviewTest-UnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMDInterviewTest-UnitTests.debug.xcconfig"; path = "Target Support Files/Pods-WebMDInterviewTest-UnitTests/Pods-WebMDInterviewTest-UnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A1E164328C25F9B00DFDFC7 /* ItemsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsTableViewCell.xib; sourceTree = "<group>"; };
+		5A1E164628C32E7300DFDFC7 /* FeedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsViewController.swift; sourceTree = "<group>"; };
+		5A1E164B28C3D40500DFDFC7 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		9F4F344908BF476674F4A622 /* Pods_WebMDInterviewTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebMDInterviewTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CD7BFE4ADD0A2A8BCB292D /* Pods-WebMDInterviewTest-UnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMDInterviewTest-UnitTests.release.xcconfig"; path = "Target Support Files/Pods-WebMDInterviewTest-UnitTests/Pods-WebMDInterviewTest-UnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		A97788B7AB3EFE93D9B78E1D /* Pods-WebMDInterviewTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMDInterviewTest.debug.xcconfig"; path = "Target Support Files/Pods-WebMDInterviewTest/Pods-WebMDInterviewTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F212351125BF56F10003048F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F218566825BD6A1300FD50E4 /* WebMDInterviewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebMDInterviewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F218566B25BD6A1300FD50E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F218566F25BD6A1300FD50E4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		F218566F25BD6A1300FD50E4 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		F218567225BD6A1300FD50E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F218567425BD6A1400FD50E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F218567725BD6A1400FD50E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,6 +106,7 @@
 		5A1E163B28C24C4A00DFDFC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5A1E163D28C24E9C00DFDFC7 /* TableViewCell */,
 				5A1E163C28C24C5700DFDFC7 /* Storyboard */,
 			);
 			path = View;
@@ -113,6 +119,14 @@
 				F218567625BD6A1400FD50E4 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5A1E163D28C24E9C00DFDFC7 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5A1E164328C25F9B00DFDFC7 /* ItemsTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		F218565F25BD6A1300FD50E4 = {
@@ -155,7 +169,8 @@
 		F218568125BD6B1000FD50E4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F218566F25BD6A1300FD50E4 /* FeedViewController.swift */,
+				F218566F25BD6A1300FD50E4 /* FeedTableViewController.swift */,
+				5A1E164628C32E7300DFDFC7 /* FeedDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +211,7 @@
 		F21856DE25BD815A00FD50E4 /* WebMDInterviewTest-UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				5A1E164B28C3D40500DFDFC7 /* data.json */,
 				F21856DF25BD815A00FD50E4 /* WebMDInterviewTest_UnitTests.swift */,
 				F21856E125BD815A00FD50E4 /* Info.plist */,
 			);
@@ -287,6 +303,7 @@
 			files = (
 				F218567825BD6A1400FD50E4 /* LaunchScreen.storyboard in Resources */,
 				F218567525BD6A1400FD50E4 /* Assets.xcassets in Resources */,
+				5A1E164528C25F9B00DFDFC7 /* ItemsTableViewCell.xib in Resources */,
 				F212351225BF56F10003048F /* README.md in Resources */,
 				F218567325BD6A1300FD50E4 /* Main.storyboard in Resources */,
 				F218568825BD6C5100FD50E4 /* data.json in Resources */,
@@ -372,9 +389,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F218568F25BD6CF700FD50E4 /* FeedItem.swift in Sources */,
-				F218567025BD6A1300FD50E4 /* FeedViewController.swift in Sources */,
+				F218567025BD6A1300FD50E4 /* FeedTableViewController.swift in Sources */,
 				F218569525BD760900FD50E4 /* ResourceReader.swift in Sources */,
 				F218568C25BD6CE900FD50E4 /* FeedResponse.swift in Sources */,
+				5A1E164728C32E7300DFDFC7 /* FeedDetailsViewController.swift in Sources */,
 				F21856D625BD794600FD50E4 /* FeedProvider.swift in Sources */,
 				F218566C25BD6A1300FD50E4 /* AppDelegate.swift in Sources */,
 			);
@@ -541,14 +559,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LTG3VGR5L;
+				DEVELOPMENT_TEAM = J88XR9DQS4;
 				INFOPLIST_FILE = WebMDInterviewTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.WebMDInterviewTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WebMDInterviewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -562,14 +580,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LTG3VGR5L;
+				DEVELOPMENT_TEAM = J88XR9DQS4;
 				INFOPLIST_FILE = WebMDInterviewTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.WebMDInterviewTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WebMDInterviewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -582,7 +600,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LTG3VGR5L;
+				DEVELOPMENT_TEAM = J88XR9DQS4;
 				INFOPLIST_FILE = "WebMDInterviewTest-UnitTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,7 +621,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LTG3VGR5L;
+				DEVELOPMENT_TEAM = J88XR9DQS4;
 				INFOPLIST_FILE = "WebMDInterviewTest-UnitTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
