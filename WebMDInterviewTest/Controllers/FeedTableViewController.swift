@@ -30,24 +30,11 @@ class FeedTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-		
-		getFeedProviderData() { isDone in
-			if isDone {
-				print("k")
-				self.tableView.reloadData()
-			}
-		}
+		getFeedProviderData()
     }
 	
-	func getFeedProviderData(getFeedProviderDataCompletion: @escaping(Bool)->Void) {
-		FeedProvider.init().getFeed() { items in
-			if items != nil {
-				if let items = items {
-					self.itemList = items
-				}
-				getFeedProviderDataCompletion(true)
-			}
-		}
+	func getFeedProviderData() {
+		self.itemList = FeedProvider.init().sortTitle()
 	}
 }
 

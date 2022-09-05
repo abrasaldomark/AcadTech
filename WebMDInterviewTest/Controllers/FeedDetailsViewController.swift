@@ -44,7 +44,7 @@ class FeedDetailsViewController: UIViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		scrollView.contentSize = CGSize(width: view.frame.size.width, height: UIScreen.main.bounds.height)
+		scrollView.contentSize = CGSize(width: view.frame.size.width, height: UIScreen.main.bounds.height + 100)
 		scrollView.automaticallyAdjustsScrollIndicatorInsets = false
 	}
 }

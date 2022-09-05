@@ -9,13 +9,11 @@ class WebMDInterviewTest_UnitTests: XCTestCase {
      3. OPTIONAL: Write at least 1 unit test for a functionality you think that it needs to be covered by tests.
      */
 	
-	func testCanParseData() {
+	var feedItemData: FeedResponseModel!
+	
+	func testCanParseDataJSONFile() {
 		
-	}
-	
-	
-	func testCanParseDataViaJSONFile() throws {
-		guard let pathString = Bundle(for: type(of: self)).path(forResource: "data", ofType: "json") else {
+		guard let pathString = Bundle(for: type(of: self)).path(forResource: "datas", ofType: "json") else {
 			fatalError("data.json not found")
 		}
 
@@ -35,8 +33,17 @@ class WebMDInterviewTest_UnitTests: XCTestCase {
 
 		print("The JSON dictionary is: \(jsonDictionary)")
 		
-		let feedItemData = try! JSONDecoder().decode(FeedItem.self, from: jsonData)
+		feedItemData = try! JSONDecoder().decode(FeedResponseModel.self, from: jsonData)
 		
-		XCTAssertEqual("Biotin Can Distort Lab Tests", feedItemData.title)
+		XCTAssertEqual("Biotin Can Distort Lab Tests", feedItemData.items![0].title)
+	}
+	
+	func test_Filter() throws {
+		
+		let feedProvider = FeedProvider()
+		
+		let filteredDuplicate = feedProvider.filterDuplicate()
+//		XCTAssertTrue()
+		
 	}
 }

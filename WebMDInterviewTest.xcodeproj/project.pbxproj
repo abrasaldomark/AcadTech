@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5A1E164528C25F9B00DFDFC7 /* ItemsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1E164328C25F9B00DFDFC7 /* ItemsTableViewCell.xib */; };
 		5A1E164728C32E7300DFDFC7 /* FeedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E164628C32E7300DFDFC7 /* FeedDetailsViewController.swift */; };
+		5A1E164D28C3DAB900DFDFC7 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A1E164C28C3DAB900DFDFC7 /* data.json */; };
 		6A485480065085FBCCAF283C /* Pods_WebMDInterviewTest_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546A7FFC0A1D0E8E4CC769 /* Pods_WebMDInterviewTest_UnitTests.framework */; };
 		99667451A254FF6546928C07 /* Pods_WebMDInterviewTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4F344908BF476674F4A622 /* Pods_WebMDInterviewTest.framework */; };
 		F212351225BF56F10003048F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F212351125BF56F10003048F /* README.md */; };
@@ -41,7 +42,7 @@
 		495C5EEF0D660C5132D64CF5 /* Pods-WebMDInterviewTest-UnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMDInterviewTest-UnitTests.debug.xcconfig"; path = "Target Support Files/Pods-WebMDInterviewTest-UnitTests/Pods-WebMDInterviewTest-UnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A1E164328C25F9B00DFDFC7 /* ItemsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsTableViewCell.xib; sourceTree = "<group>"; };
 		5A1E164628C32E7300DFDFC7 /* FeedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsViewController.swift; sourceTree = "<group>"; };
-		5A1E164B28C3D40500DFDFC7 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		5A1E164C28C3DAB900DFDFC7 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		9F4F344908BF476674F4A622 /* Pods_WebMDInterviewTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebMDInterviewTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CD7BFE4ADD0A2A8BCB292D /* Pods-WebMDInterviewTest-UnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMDInterviewTest-UnitTests.release.xcconfig"; path = "Target Support Files/Pods-WebMDInterviewTest-UnitTests/Pods-WebMDInterviewTest-UnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		A97788B7AB3EFE93D9B78E1D /* Pods-WebMDInterviewTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMDInterviewTest.debug.xcconfig"; path = "Target Support Files/Pods-WebMDInterviewTest/Pods-WebMDInterviewTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,9 +212,9 @@
 		F21856DE25BD815A00FD50E4 /* WebMDInterviewTest-UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				5A1E164B28C3D40500DFDFC7 /* data.json */,
 				F21856DF25BD815A00FD50E4 /* WebMDInterviewTest_UnitTests.swift */,
 				F21856E125BD815A00FD50E4 /* Info.plist */,
+				5A1E164C28C3DAB900DFDFC7 /* data.json */,
 			);
 			path = "WebMDInterviewTest-UnitTests";
 			sourceTree = "<group>";
@@ -314,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1E164D28C3DAB900DFDFC7 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
